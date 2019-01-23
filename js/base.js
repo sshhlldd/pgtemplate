@@ -53,9 +53,6 @@ var myTime = function (objArr) {
 
     }
     init();
-
-    var endt = new Date(obj.value.replace(/-/g,'/')).getTime()
-    alert(endt);
     var emsize = setpx(parseInt(obj.size) - 3);
 
     setInterval(countTime, 1000);
