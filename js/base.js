@@ -53,6 +53,9 @@ var myTime = function (objArr) {
 
     }
     init();
+
+    var endt = new Date(obj.value.replace(/-/g,'/')).getTime()
+    alert(endt);
     var emsize = setpx(parseInt(obj.size) - 3);
 
     setInterval(countTime, 1000);
@@ -65,9 +68,11 @@ var myTime = function (objArr) {
       //设置截止时间
       var str = obj.value;
       var end = new Date(str.replace(/-/g,'/')).getTime()
-
+      
       //时间差
       var leftTime = end - now;
+
+
       //定义变量 d,h,m,s保存倒计时的时间
       var d, h, m, s;
       if (leftTime >= 0) {
