@@ -1,0 +1,1107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/*热点*/
+.minipage .picBox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.minipage .picBox a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  /* background: #0f0; */
+}
+
+.minipage .picBox img {
+  width: 100%;
+}
+
+.minipage .pop {
+  display: none;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+  /*overflow-y: scroll;*/
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fff;
+  z-index: 291;
+}
+
+.minipage .popCon {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.minipage .pop .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  z-index: 292;
+}
+
+.minipage .pop img {
+  width: 100%;
+}
+
+/*视频*/
+.minipage .videoBox {
+  /*width: 100%;*/
+  position: relative;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.minipage .videoBox video {
+  width: 100%;
+  float: left;
+}
+
+.minipage .videoBox .videoCtrl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url(../img/start.png) no-repeat center center;
+  background-size: 15%;
+}
+
+/*轮播图*/
+
+.img-container {
+  width: 100%;
+}
+
+.img_scroll {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #f3f3f3;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  top: 37%;
+  width: 5%;
+  height: 30%;
+  z-index: 100;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  top: 37%;
+  width: 5%;
+  height: 30%;
+  z-index: 100;
+}
+
+/*roll_btn 第一套 翻页按钮*/
+
+.rollbtn_type1 .roll_btn,
+.rollbtn_type2 .roll_btn,
+.rollbtn_type3 .roll_btn {
+  width: 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+.rollbtn_type1 .prev:before,
+.rollbtn_type1 .next:before {
+  background: none;
+  font-family: "iconfont" !important;
+  content: "\e631";
+}
+
+.rollbtn_type1 .next:before {
+  content: "\e633";
+  position: absolute;
+  right: 0;
+}
+
+.rollbtn_type1 .prev:before {
+  position: absolute;
+  left: 0;
+}
+
+/*roll_btn 第二套 翻页按钮*/
+.rollbtn_type2 .prev:before,
+.rollbtn_type2 .next:before {
+  font-family: "iconfont" !important;
+  content: "\e6f2";
+}
+
+.rollbtn_type2 .next:before {
+  content: "\e6f3";
+  position: absolute;
+  right: 0;
+}
+
+.rollbtn_type2 .prev:before {
+  position: absolute;
+  left: 0;
+}
+
+/*roll_btn 第三套 翻页按钮*/
+
+.rollbtn_type3 .prev:before,
+.rollbtn_type3 .next:before {
+  background: none;
+  font-family: "iconfont" !important;
+  content: "\e704";
+}
+
+.rollbtn_type3 .next:before {
+  content: "\e703";
+  position: absolute;
+  right: 0;
+}
+
+.rollbtn_type3 .prev:before {
+  position: absolute;
+  left: 0;
+}
+
+/*end .rollbtn_type*/
+.slidebg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.img-list {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-list ul {
+  width: 99999px;
+  margin: 0;
+  padding: 0;
+}
+
+.img_scroll .img-list li {
+  float: left;
+  width: 328px;
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  left: 5px;
+  height: 10px;
+  z-index: 1;
+  margin: 0;
+  text-align: right;
+}
+
+.slide-nav li {
+  margin: 0 2px;
+  background: #5a5a5a;
+  display: inline-block;
+}
+
+/*rollli circle*/
+
+.rollnav_type1 li {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.rollnav_type1 li.on {
+  background: #ebebea;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+/*rollli rect*/
+.rollnav_type2 li {
+  width: 12px;
+  height: 5px;
+}
+
+.rollnav_type2 li.on {
+  width: 12px;
+  height: 5px;
+}
+
+/*模板公共*/
+body.minipage {
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "微软雅黑";
+  overflow-x: hidden;
+}
+
+.minipage label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.minipage .wrap {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.minipage input,
+.minipage select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.minipage li,
+.minipage ul {
+  list-style: none;
+}
+
+.minipage img {
+  border: none;
+  vertical-align: top;
+}
+
+.minipage a {
+  text-decoration: none;
+}
+
+.minipage .mt {
+  margin-top: 2%;
+}
+
+.minipage .mb {
+  margin-bottom: 2%；;
+}
+
+.minipage .f_l {
+  float: left;
+}
+
+.minipage .f_r {
+  float: right;
+}
+
+.minipage .t-align {
+  text-align: right;
+}
+
+.minipage .form-rowcon {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.minipage .form-row {
+  text-align: center;
+  overflow: hidden;
+}
+
+.minipage .form-row span {
+  display: block;
+}
+
+.minipage .form-row.selx2 {
+  border: none;
+}
+
+.minipage .selx2 .select-wrap {
+  width: 45%;
+}
+
+.minipage .form-row .inlut-wrap {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 4px;
+}
+
+.minipage .form-row .select-wrap {
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+  padding: 0 4px;
+}
+
+.minipage .select-wrap .arrow {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top-width: 8px;
+  border-top-style: solid;
+  z-index: 1;
+}
+
+.minipage .form-row input[type="text"],
+.minipage .form-row select {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 35px;
+  font-size: 1.5rem;
+}
+
+.minipage .form-row .sex-style input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.minipage .btnCon {
+  margin-bottom: 0;
+}
+
+.minipage .form-submitbtn {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*自定义皮肤*/
+
+/* 只有自定义皮肤有设置背景选项 */
+
+.minipage .formstyle-default {
+  /*background-image: url(images/bga.jpg);*/
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+/* 设置表单各行间距 */
+
+.minipage .formstyle-default .js-formspace {
+  margin-bottom: 5px;
+}
+
+/* 设置input/selct 圆角 边框 背景 */
+
+.minipage .formstyle-default .js-style {
+  border-radius: 3px;
+  border-color: #8a705d;
+  background: #fff;
+}
+
+/* 设置input/selct 字体颜色 */
+
+.minipage .formstyle-default .js-style .js-textcolor {
+  color: #444;
+}
+
+/* 设置selct 下拉按钮 */
+
+.minipage .formstyle-default .select-wrap .js-arr {
+  border-top-color: #8a705d;
+}
+
+/* 设置按钮圆角 背景 颜色 边框 距离顶部间距*/
+
+.minipage .formstyle-default .js-btnpos {
+  text-align: center;
+}
+
+/* 设置按钮圆角 背景 颜色 边框 距离顶部间距*/
+
+.minipage .formstyle-default .js-btnstyle {
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+  background-color: #8a705d;
+  color: #fff;
+  border-color: #8a705d;
+}
+
+/*皮肤默认*/
+.minipage .form-row .sex-style label {
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.minipage .form-row .sex-style .label-sex {
+  display: inline;
+  margin-right: 10%;
+  vertical-align: 3px;
+}
+
+.minipage .form-row .sex-style {
+  height: 35px;
+  text-align: left;
+  padding-right: 0;
+  line-height: 35px;
+}
+
+.minipage .form-row .sex-style .half-label {
+  width: 30%;
+}
+
+.minipage .form-row .sex-style .sex-name {
+  width: 30%;
+  vertical-align: 3px;
+}
+
+.minipage .form-row .sex-style .ipt-radio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.minipage .form-row .sex-style .ipt-radio:checked+.iconfont:before {
+  content: "\e649";
+}
+
+/*第一套模板*/
+.minipage .tempstyle1 .selx2 {
+  width: 46%;
+}
+
+.minipage .tempstyle1 .label-sex .iconfont {
+  vertical-align: 2px;
+}
+
+/*第二套模板*/
+
+.minipage .tempstyle2 .selx2-1 .select-wrap {
+  padding-right: 0;
+}
+
+.minipage .tempstyle2 .form-row .sex-style .sex-name {
+  width: 25%;
+}
+
+.minipage .tempstyle2 .form-row .sex-style .iconfont {
+  top: 1px;
+}
+
+.minipage .tempstyle2 .form-row .sex-style .half-label {
+  width: 25%;
+}
+
+.minipage .tempstyle2 .selx2-1 .border-line {
+  width: 1px;
+  height: 60%;
+  border-left: 1px solid #989390;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.minipage .tempstyle2 .form-row .select-child {
+  width: 48%;
+  position: relative;
+}
+
+/*设置icon-lt*/
+
+.minipage .tempstyle2 .iconfont {
+  color: #989390;
+  font-size: 18px;
+  position: absolute;
+  top: 7px;
+}
+
+.minipage .tempstyle2 .js-style {
+  position: relative;
+}
+
+.minipage .tempstyle2 .js-style .js-textcolor {
+  padding-left: 26px;
+  outline: none;
+}
+
+/*第三套模板*/
+.minipage .tempstyle3 .form-label {
+  font-weight: normal;
+  line-height: 37px;
+}
+
+.minipage .tempstyle3 .form-ipt {
+  height: 37px;
+  margin-left: 78px;
+  text-align: left;
+}
+
+.minipage .tempstyle3 .form-row .sex[type="radio"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  /*z-index: -100;*/
+  /*left:-9999px;*/
+  border: none;
+}
+
+.minipage .tempstyle3 .form-row .sex[type="radio"] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: none;
+}
+
+.minipage .tempstyle3 .sex:checked+.iconfont:before {
+  content: "\e649";
+}
+
+.minipage .tempstyle3 .female {
+  margin-left: 14px;
+}
+
+.minipage .tempstyle3 .selx2 .select-wrap {
+  width: 45%;
+}
+
+.minipage .tempstyle3 .sex-form {
+  line-height: 37px;
+}
+
+/* 美化用户同意 按钮*/
+.minipage .agreement span {
+  font-size: 11px;
+}
+
+.minipage .agreement input {
+  width: 0;
+  height: 0;
+  position: fixed;
+  z-index: -100;
+}
+
+.minipage .agreement .iconfont {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  color: #39280a;
+  vertical-align: -2px;
+  position: static;
+  margin-right: 3px;
+}
+
+.minipage .agreement input:checked+.iconfont:before {
+  content: "\e6fd";
+}
+
+/*loading*/
+#loading {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin-top: 0px;
+  top: 0px;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  -webkit-animation: loading-center-absolute 1s infinite;
+  animation: loading-center-absolute 1s infinite;
+}
+
+.object {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  float: left;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.object:nth-child(2n + 0) {
+  margin-right: 0px;
+}
+
+#object_one {
+  -webkit-animation: object_one 1s infinite;
+  animation: object_one 1s infinite;
+}
+
+#object_two {
+  -webkit-animation: object_two 1s infinite;
+  animation: object_two 1s infinite;
+}
+
+#object_three {
+  -webkit-animation: object_three 1s infinite;
+  animation: object_three 1s infinite;
+}
+
+#object_four {
+  -webkit-animation: object_four 1s infinite;
+  animation: object_four 1s infinite;
+}
+
+@-webkit-keyframes loading-center-absolute {
+  100% {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-center-absolute {
+  100% {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes object_one {
+  50% {
+    -ms-transform: translate(20px, 20px);
+    -webkit-transform: translate(20px, 20px);
+    transform: translate(20px, 20px);
+  }
+}
+
+@keyframes object_one {
+  50% {
+    -ms-transform: translate(20px, 20px);
+    -webkit-transform: translate(20px, 20px);
+    transform: translate(20px, 20px);
+  }
+}
+
+@-webkit-keyframes object_two {
+  50% {
+    -ms-transform: translate(-20px, 20px);
+    -webkit-transform: translate(-20px, 20px);
+    transform: translate(-20px, 20px);
+  }
+}
+
+@keyframes object_two {
+  50% {
+    -ms-transform: translate(-20px, 20px);
+    -webkit-transform: translate(-20px, 20px);
+    transform: translate(-20px, 20px);
+  }
+}
+
+@-webkit-keyframes object_three {
+  50% {
+    -ms-transform: translate(20px, -20px);
+    -webkit-transform: translate(20px, -20px);
+    transform: translate(20px, -20px);
+  }
+}
+
+@keyframes object_three {
+  50% {
+    -ms-transform: translate(20px, -20px);
+    -webkit-transform: translate(20px, -20px);
+    transform: translate(20px, -20px);
+  }
+}
+
+@-webkit-keyframes object_four {
+  50% {
+    -ms-transform: translate(-20px, -20px);
+    -webkit-transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px);
+  }
+}
+
+@keyframes object_four {
+  50% {
+    -ms-transform: translate(-20px, -20px);
+    -webkit-transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px);
+  }
+}
+
+/*end-loading*/
+/*dzp*/
+.ly-plate {
+  position: relative;
+  width: 100%;
+}
+
+.dzpcon {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.rotate-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: translateZ(-1px);
+}
+
+.ly-plate div.lottery-star {
+  left: 40%;
+  outline: medium none;
+  position: absolute;
+  top: 110px;
+  width: 20%;
+  outline: none;
+  z-index: 2;
+  -webkit-transform: translateZ(-1px);
+}
+
+.ly-plate .pro-img {
+  position: absolute;
+  z-index: 1;
+  width: 15%;
+  height: 15%;
+  text-align: center;
+  -webkit-transform: translateZ(-1px);
+}
+
+
+.ly-plate .pro-img p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.ly-plate .pro-img1 {
+  left: 79px;
+  top: 31px;
+  -webkit-transform: rotate(-180deg);
+}
+
+.ly-plate .pro-img2 {
+  left: 146px;
+  top: 32px;
+  -webkit-transform: rotate(120deg);
+}
+
+.ly-plate .pro-img3 {
+  left: 194px;
+  top: 81px;
+  -webkit-transform: rotate(60deg);
+}
+
+.ly-plate .pro-img4 {
+  left: 193px;
+  top: 147px;
+  -webkit-transform: rotate(0deg);
+}
+
+.ly-plate .pro-img5 {
+  left: 148px;
+  top: 196px;
+  -webkit-transform: rotate(-60deg);
+}
+
+.ly-plate .pro-img6 {
+  left: 76px;
+  top: 195px;
+  -webkit-transform: rotate(-120deg);
+}
+
+.ly-plate .rotate-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ly-plate .rotate-btn a {
+  display: inline-block;
+  color: #1abc9c;
+  width: 260px;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 9px;
+  border: 1px solid #1abc9c;
+  border-radius: 25px;
+}
+
+/*end-dzp*/
+/*text-scroll*/
+.text-scroll {
+  background-image: url(https://static.auto-smart.com/autopg/static/img/bg.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.text-scroll .tit {
+  padding-bottom: 2%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.text-scroll .tit span {
+  padding: 0 4px;
+}
+
+.text-scroll ul li {
+  display: flex;
+  padding: 1% 0;
+  display: -webkit-flex;
+  justify-content: space-around;
+}
+
+.text-scroll .scroll-wrap {
+  overflow: hidden;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+/*end-text-scroll*/
+/*time*/
+.mytime {
+  background-image: url(https://static.auto-smart.com/autopg/static/img/bg.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+}
+
+.mytime .tit {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.mytime .count {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.mytime .count span {
+  padding: 0 1%;
+}
+
+.mytime .count em {
+  font-style: normal;
+}
+
+/*end-time*/
+/*pop*/
+.my_pop {
+  width: 100%;
+}
+
+.my_pop .cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: 998;
+}
+
+.my_pop .pop_box {
+  width: 80%;
+  position: fixed;
+  top: 17%;
+  left: 10%;
+  z-index: 999;
+}
+
+.my_pop .pop_head {
+  padding: 10px 20px;
+  min-height: 20px;
+  background: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.my_pop .pop_head h4 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #333;
+}
+
+.my_pop .pop_body {
+  position: relative;
+  padding: 10px 20px;
+  background: #fff;
+  color: #666;
+  min-height: 150px;
+  max-height: 350px;
+  overflow: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.my_pop .pop_head button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+
+.my_pop .pop_head .close {
+  float: right;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: #999;
+  filter: alpha(opacity=20);
+}
+
+.my_pop .pop_foot {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+@-webkit-keyframes dialogue-in {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 17%;
+  }
+}
+
+.animation-dialogue-in {
+  display: block;
+  -webkit-animation: dialogue-in 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.my_pop .btncon {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.my_pop .btncon a {
+  width: 60%;
+  background: #ff5b73;
+  color: #fff;
+  padding: 2% 0;
+  font-size: 16px;
+  border-radius: 25px;
+  letter-spacing: 3px;
+  border: 1px solid #b9d281;
+}
+
+.my_pop h5 {
+  font-size: 18px;
+  color: #fee300;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 2px #000;
+  margin: 5% 0;
+  text-align: center;
+}
+
+.my_pop .tip {
+  text-indent: 2em;
+  line-height: 150%;
+}
+
+/*隐藏滚动条*/
+
+.forbid-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*end-pop*/
+/*tip*/
+.my_tip {
+  position: fixed;
+  top: -40px;
+  left: 30%;
+  width: 40%;
+  z-index: 999;
+}
+
+.tip_body {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+@-webkit-keyframes mytip-in {
+  0% {
+    top: -40px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
+
+.animation-mytip-in {
+  display: block;
+  -webkit-animation: mytip-in ease-in 0.5s forwards;
+}
+
+/*end-tip*/
