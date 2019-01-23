@@ -64,8 +64,7 @@ var myTime = function (objArr) {
       var now = date.getTime();
       //设置截止时间
       var str = obj.value;
-      var endDate = new Date(str);
-      var end = endDate.getTime();
+      var end = new Date(str.replace(/-/g,'/')).getTime()
 
       //时间差
       var leftTime = end - now;
